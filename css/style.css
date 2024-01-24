@@ -1,0 +1,145 @@
+:root{
+    --textColor:black;
+    --bgColor:white;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul,li{
+    list-style: none;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--bgColor);
+}
+.container{
+    width: 1170px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+/* counter */
+
+#counter_sec .row{
+    height: 100vh;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+#counter_sec h1{
+    color: var(--textColor);
+    text-align: center;
+    margin-top: 20px;
+}
+
+.counter{
+    
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.941);
+    background-color: aquamarine;
+    width: 100px;
+    height: 80px;
+    margin-right:50px;
+    text-align: center;
+    line-height: 80px;
+    font-size: 35px;
+    color: var(--textColor);
+
+}
+
+
+/* darkmode */
+
+
+
+body.darkMode{
+    --textColor:white;
+    --bgColor:rgba(0, 0, 0, 0.881);
+    transition: 0.3s;
+    
+}
+
+.darkmodeBtn{
+    width: 40px;
+    border-radius: 40%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.darkmodeBtn span{
+    width: 100%;
+    height: 100%;
+    display: block;
+    font-size: 25px;
+}
+
+.darkmodeBtn span.sun{
+    color: yellow;
+    background-color: aquamarine;
+    transition: 0.3s cubic-bezier(0,1.25,.71,1.29);
+}
+.darkmodeBtn span.moon{
+    background-color: rgb(6, 11, 28);
+    color: white;
+}
+
+
+
+body.darkMode .darkmodeBtn .sun{
+    margin-top: -100%;
+}
+
+
+
+
+
+/* counter end*/
+/* back to top */
+#backToTop{
+    margin: 100px 0;
+}
+#backToTop h2{
+text-align: center;
+padding: 50px 0;
+color: var(--textColor);
+
+}
+#backToTop p{
+    padding: 20px 10px;
+    color: var(--textColor);
+    }
+.backToTop_btn{
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    background-image: conic-gradient(green 0% 0%,white 0% 0% );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ .backToTop_btn span{
+    background-color: white;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: inline-block;
+}
